@@ -14,3 +14,31 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }
+
+.button_type_save {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 50px auto 0;
+  padding: 15px 20px;
+}
+
+.button {
+  position: relative;
+  border: 2px solid var(--acent-color);
+  padding: 10px 17px;
+  overflow: hidden;
+  color: var(--button-text-color);
+  font-family: var(--acent-font), fantasy;
+  font-size: 14px;
+  background-color: var(--bg-color);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-title {
+  border-block-end: 2px solid var(--acent-color, #000);
+  padding: 5px 10px;
+  font-size: 18px;
+  font-variation-settings: 'wght' var(--card-title-font-weight, 700);
+}
