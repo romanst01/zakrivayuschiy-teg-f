@@ -1,7 +1,6 @@
 :root {
-  --main-font: "Inter-Variable", sans-serif;
-  --accent-font: "PressStart2P", fantasy;
-  --accent-color: #aed5f1;
+  --main-font: "Inter-Variable";
+  --accent-font: "PressStart2P";
   --text-stroke-color: #000000;
   --animation-fill-color: #ff0000;
   --card-text-weight: 400;
