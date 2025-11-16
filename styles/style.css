@@ -357,14 +357,11 @@ dialog:not([open]) {
 
   .save-button {
     flex-direction: column;
+    padding-block-end: 11px;
   }
 
   .button svg {
     block-size: 2em;
-  }
-
-  .save-button {
-    padding-block-end: 11px;
   }
 
   .dialog {
