@@ -39,7 +39,7 @@
 }
 
 .header-block,
-.save {
+.save-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,7 +161,7 @@
   transition: box-shadow 0.3s ease;
 }
 
-.save {
+.save-button {
   margin: auto;
   text-wrap: nowrap;
   padding-block-start: 15px;
@@ -352,7 +352,7 @@ dialog:not([open]) {
     padding: 25px;
   }
 
-  .save {
+  .save-button {
     flex-direction: column;
   }
 }
