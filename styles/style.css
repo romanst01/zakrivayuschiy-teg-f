@@ -31,6 +31,7 @@
 .header {
   padding-block-start: 100px;
   padding-block-end: 100px;
+  
 }
 
 .header-block {
@@ -66,14 +67,14 @@
 }
 
 .header-logo {
-  font-size: clamp(3.063rem, 2.7109rem + 1.5023vw, 4.063rem);
+  font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
   font-variation-settings: "wght" var(--card-text-weight, 400);
   line-height: 1;
 }
 
 .header-title {
   margin-top: 20px;
-  font-size: clamp(0.875rem, 0.6768rem + 0.8458vw, 1.438rem);
+  font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
 }
 
 .content {
@@ -112,15 +113,20 @@
   mix-blend-mode: hard-light;
   opacity: 0.6;
   text-transform: uppercase;
-  text-shadow: -1px -1px 0 var(--text-stroke-color),
-    1px -1px 0 var(--text-stroke-color), -1px 1px 0 var(--text-stroke-color),
-    1px 1px 0 var(--text-stroke-color);
+  text-shadow:
+  -1px 0 var(--main-bg-color), 
+  0 1px var(--main-bg-color), 
+  1px 0 var(--main-bg-color), 
+  0 -1px var(--main-bg-color);
+  mix-blend-mode: hard-light;
+  z-index: 1;
 }
 
 @supports ((text-stroke: 1px #000) or (-webkit-text-stroke: 1px #000)) {
   .card-label {
-    text-stroke: 1px var(--text-stroke-color);
-    -webkit-text-stroke: 1px var(--text-stroke-color);
+    -webkit-text-stroke: 1px var(--main-bg-color);
+    text-stroke: 1px var(--main-bg-color);
+    text-shadow: none;
   }
 }
 
@@ -186,7 +192,6 @@
 
 .button svg {
   position: relative;
-  z-index: 1;
   block-size: 1.5em;
   mix-blend-mode: difference;
 }
@@ -371,5 +376,9 @@ dialog:not([open]) {
 
   .dialog-button {
     min-inline-size: 261px;
+  }
+
+  .card-text-paragraph:last-child {
+  margin-bottom: 0px;
   }
 }
