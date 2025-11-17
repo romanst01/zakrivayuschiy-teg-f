@@ -118,7 +118,6 @@
   0 1px var(--main-bg-color), 
   1px 0 var(--main-bg-color), 
   0 -1px var(--main-bg-color);
-  mix-blend-mode: hard-light;
   z-index: 1;
 }
 
